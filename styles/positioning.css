@@ -1,0 +1,19 @@
+.stp {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.stp-body {
+  display: flex;
+  flex: 1;
+}
+
+.stp-nav {
+  order:-1;
+}
+
+.stp-content {
+  flex: 1;
+  fle: 0 0 12em;
+}
