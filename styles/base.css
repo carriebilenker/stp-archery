@@ -6,13 +6,10 @@ html {font-size: 16px;
   font-family:'Hind Guntur', sans-serif;
 }
 
+/*2274a5 */
 .stp-nav {
-  height: 1.5rem;
-  width: 100%;
   background:#e4572e;
   color: #f0f8ea;
-}
-
-.stp-nav p {
-
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  font-size: .8rem;
 }

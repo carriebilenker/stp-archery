@@ -13,19 +13,63 @@
 .stp-nav {
   order:1;
   display: inline-flex;
-  justify-content: space-around;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin: auto 0 0 0;
+  justify-content:flex-end;
+  width: 100%;
+  height: 1.5rem;
+  padding-bottom:.8rem;
 }
 
-.stp-nav p {
-display: flex;
-padding-left: 0;
-padding-right: 0;
-height: 1.5rem;
-width: 100%;
+.stp-nav ul {
+  margin-right: 4rem;
+  list-style-type:none;
+	padding:0;
+	position: absolute;
 }
 
-.stp-content {
-  flex: 1;
+.stp-nav li a{
+  text-decoration: none;
+  color: #f0f8ea;
+
 }
+/* Hover state for top level links*/
+li:hover a{
+  color: #472418;
+  height: 20px;
+  width: 20px;
+}
+/*style for dropdown links*/
+li:hover ul a {
+  background-color: #cb4d28;
+  color: #f0f8ea;
+  display: block;
+}
+/* hover state for drop down links
+li:hover ul a:hover {
+  background-color: #cb4d28;
+  color: #f0f8ea;
+}
+
+hide dropdowns until needed
+link ul {
+  display: none;
+}
+
+Make dropdown links vertical
+li ul li {
+	display: block;
+	float: none;
+}
+
+Prevent text wrapping
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+Display the dropdown on hover
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}*/
