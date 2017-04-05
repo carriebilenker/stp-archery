@@ -2,18 +2,30 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .stp-body {
   display: flex;
-  flex: 1;
+
 }
 
 .stp-nav {
-  order:-1;
+  order:1;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto 0 0 0;
+}
+
+.stp-nav p {
+display: flex;
+padding-left: 0;
+padding-right: 0;
+height: 1.5rem;
+width: 100%;
 }
 
 .stp-content {
   flex: 1;
-  fle: 0 0 12em;
 }
