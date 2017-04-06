@@ -6,8 +6,7 @@
 }
 
 .stp-body {
-  display: flex;
-
+  flex: 1;
 }
 
 .stp-nav {
@@ -15,12 +14,74 @@
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:flex-end;
+  justify-content: space-between;
   width: 100%;
-  height: 1.5rem;
-  padding-bottom:.8rem;
+  height: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3rem;
 }
 
+.stp-nav ul {
+  padding-top: .8rem;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+.home-image {
+  align-items: center;
+  border: .1rem;
+  margin: 2rem;
+  margin-left: 5.5rem;
+  width: 80%;
+
+}
+
+
+.stp-nav ul li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+.stp-nav a {
+  display: block;
+  padding: 0 10px;
+  color: #f0f8ea;
+  text-decoration: none;
+}
+
+.stp-nav ul li a:hover {
+  color: #472418;
+  display: list-item;
+}
+
+/*
+
+.stp-nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+
+.stp-nav ul li a:hover {
+  display:inherit;
+}
+
+.stp-nav ul ul li {
+  display:list-item;
+  position: relative;
+}
+
+
+  /*
+  background-color: #cb4d28;
+  margin: 4 auto;
+*/
+
+
+/*
 .stp-nav ul {
   margin-right: 4rem;
   list-style-type:none;
@@ -33,13 +94,13 @@
   color: #f0f8ea;
 
 }
-/* Hover state for top level links*/
+/* Hover state for top level links
 li:hover a{
   color: #472418;
   height: 20px;
   width: 20px;
 }
-/*style for dropdown links*/
+/*style for dropdown links
 li:hover ul a {
   background-color: #cb4d28;
   color: #f0f8ea;
